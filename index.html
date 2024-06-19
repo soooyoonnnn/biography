@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소윤의 웹프로필</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+        }
+
+        .wrap{
+            margin: 10px auto 0px auto;
+            width: 400px;
+        }
+
+        .title{
+            letter-spacing: .5em;
+            font-size: 40px;
+
+        }
+        .photo{
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            background-image: url(so.jpg);
+            background-position: center;
+            background-size: cover;
+
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-align: right; /* 텍스트를 오른쪽 정렬 */
+                    padding-top: 5px;
+                    padding-right: 15px;
+                    box-sizing: border-box;
+                    .profile>p {                      
+                        padding-left: 15px;
+                        text-indent: -15px;
+                        line-height: 1.5;
+                    }
+                
+        }
+        .profile>p {                      
+                        padding-left: 15px;
+                        text-indent: -15px;
+                        line-height: 1.5;
+                    }
+                    .profile>p>button {
+                        background-color: rgb(119, 109, 108);
+            
+                        box-shadow: 3px 3px 5px 0px rgb(36, 33, 33);
+            
+                        width: 380px;
+                        padding: 5px 3px 5px 3px;
+            
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 17px;
+                        cursor: grab;
+                    }
+                    .profile>p>button:hover{
+                        background-color: rgb(100, 84, 78);
+                    }
+                
+                
+    </style>
+</head>
+<body>
+    <div class="wrap">
+   <h1 class="title">BIOGRAPHY</h1>
+   <div class="photo">LEE SO YOON</div>
+   <div class="profile">
+    <p>
+        <span style="color: gray; font-weight: bold;">생년월일</span>
+        <br>2007년 5월 4일
+    </p>
+    <p>
+        <span style="color: gray; font-weight: bold;">대표업적</span>
+        <br>2030 세계 일주
+        <br>2057 노벨 문학상 수상
+    </p>
+    <p>
+        <span style="color: gray; font-weight: bold;">연구자료</span>
+        <br><button onclick="window.open('./article.html')">연구자료 제목</button>
+    </p>
+    <p>
+        <span style="color: gray; font-weight: bold;">추천도서</span>
+        <br><button onclick="window.open('https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=336873004')">오늘부터 나는 상태 시민 입니다</button>
+    </p>
+   </div>
+   </div>
+</body>
+
+</html>
